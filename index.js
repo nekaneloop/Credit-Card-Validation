@@ -3,6 +3,7 @@ import validator from "./validator.js";
 const btnEnviar = document.querySelector("#btnEnviar");
 const creditCard = document.getElementById("creditCard");
 
+
 btnEnviar.addEventListener("click", function () {
   //console.log("click");
   const numero = creditCard.value;
@@ -12,6 +13,8 @@ btnEnviar.addEventListener("click", function () {
 
   const mensajeElement = document.querySelector("#mensaje");
   mensajeElement.innerHTML = resultado
-    ? "Este númeroes válido"
+
+    ? "Este número es válido"
     : "Este número NO es válido";
+  
 });
